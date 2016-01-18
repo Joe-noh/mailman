@@ -2,42 +2,50 @@ defmodule Mailman.Mixfile do
   use Mix.Project
 
   def project do
-    [ app: :mailman,
+    [
+      app: :mailman,
       name: "Mailman",
-      source_url: "https://github.com/kamilc/mailman",
-      homepage_url: "https://github.com/kamilc/mailman",
-      description: "Library providing a clean way of defining mailers in Elixir apps",
+      source_url: "https://github.com/Joe-noh/mailman",
+      homepage_url: "https://github.com/Joe-noh/mailman",
+      description: desc,
       package: package,
       version: "0.2.1",
       elixir: "~> 1.0",
-      deps: deps ]
+      deps: deps
+    ]
   end
 
-  # Configuration for the OTP application
+  defp desc do
+    """
+    Library providing a clean way of defining mailers in Elixir apps.
+    Forked from kamilc/mailman.
+    """
+  end
+
   def application do
-    [ applications: [:ssl, :crypto, :eiconv, :gen_smtp]]
+    [applications: [:ssl, :crypto, :eiconv, :gen_smtp]]
   end
 
-  # Returns the list of dependencies in the format:
-  # { :foobar, "~> 0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
     [
-      { :eiconv, github: "zotonic/eiconv" },
-      { :gen_smtp, ">= 0.9.0" },
-      { :ex_doc, ">= 0.6.0" },
-      { :earmark, ">= 0.0.0" }
+      {:eiconv, github: "zotonic/eiconv"},
+      {:gen_smtp, "~> 0.9.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:earmark, ">= 0.0.0", only: :dev}
     ]
   end
 
   defp package do
     [
-      files: ["lib", "docs", "LICENSE", "README", "mix.exs"],
-      maintainers: ["Kamil Ciemniewski <ciemniewski.kamil@gmail.com>"],
+      files: ["lib", "LICENSE", "README", "mix.exs"],
+      maintainers: [
+        "Kamil Ciemniewski <ciemniewski.kamil@gmail.com>",
+        "Joe Honzawa <goflb.jh@gmail.com>"
+      ],
       licenses: ["MIT"],
       links: %{
-         "GitHub" => "https://github.com/kamilc/mailman",
-         "Docs" => "http://hexdocs.pm/mailman"
-     }
+        "GitHub" => "https://github.com/Joe-noh/mailman"
+      }
     ]
   end
 end
