@@ -1,7 +1,8 @@
 defmodule Mailman.Email do
   @moduledoc "Struct representing an email message"
 
-  defstruct subject: "",
+  defstruct [
+    subject: "",
     from: "",
     reply_to: "",
     to: [],
@@ -12,12 +13,9 @@ defmodule Mailman.Email do
     html: "",
     text: "",
     delivery: nil
+  ]
 
-    def parse(message) do
-      Mailman.Parsing.parse message
-    end
+  def parse(message),  do: Mailman.Parsing.parse message
 
-    def parse!(message) do
-      Mailman.Parsing.parse! message
-    end
+  def parse!(message), do: Mailman.Parsing.parse! message
 end

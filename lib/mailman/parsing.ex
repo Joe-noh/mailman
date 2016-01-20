@@ -2,7 +2,7 @@ defmodule Mailman.Parsing do
   @moduledoc "Functions for parsin mail messages into Elixir structs"
 
   def parse(message) when is_binary(message) do
-    { :ok, parse(:mimemail.decode(message)) }
+    {:ok, parse(:mimemail.decode(message))}
   end
 
   @doc "Parses given mime mail and returns Email"
@@ -24,8 +24,8 @@ defmodule Mailman.Parsing do
   @doc "Parses the message and returns Email"
   def parse!(message_text) do
     case parse message_text do
-      { :ok, parsed }    -> parsed
-      { :error, reason } -> throw "Couldn't parse given message. #{reason}"
+      {:ok, parsed}    -> parsed
+      {:error, reason} -> throw "Couldn't parse given message. #{reason}"
     end
   end
 
@@ -96,7 +96,7 @@ defmodule Mailman.Parsing do
       mime_type: get_type(raw_part),
       mime_sub_type: get_subtype(raw_part),
       data: get_raw_body(raw_part)
-    }
+   }
   end
 
   def content_parts(raw) when is_tuple(raw) do
