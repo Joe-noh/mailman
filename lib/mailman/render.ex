@@ -129,7 +129,7 @@ defmodule Mailman.Render do
       attachments
     ]
     |> List.flatten
-    |> Enum.filter(&not_empty_tuple_value?(&1))
+    |> Enum.filter(&not_empty_tuple_value?/1)
   end
 
   def compile_part(type, email, composer) do

@@ -1,14 +1,11 @@
 defmodule Mailman.Header do
   @moduledoc "Represents a Mime-Mail header"
 
-  defstruct [
-    name: "",
-    value: ""
-  ]
+  defstruct name:  "", value: ""
 
   def from_raw({key, value}) do
     %Mailman.Header{
-      name: key,
+      name:  key,
       value: process_value(key, value)
     }
   end

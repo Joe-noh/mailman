@@ -2,10 +2,10 @@ defmodule Mailman.EexComposeConfig do
   @moduledoc "Defines the config for the Eex composer"
 
   defstruct [
-    root_path:   "",
-    assets_path: "",
-    text_file: false,
-    html_file: false,
+    root_path:      "",
+    assets_path:    "",
+    text_file:      false,
+    html_file:      false,
     text_file_path: "",
     html_file_path: ""
   ]

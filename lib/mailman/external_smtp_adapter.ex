@@ -4,13 +4,13 @@ defmodule Mailman.ExternalSmtpAdapter do
   @doc "Delivers an email based on specified config"
   def deliver(config, email, message) do
     relay_config = [
-      relay: config.relay,
+      relay:    config.relay,
       username: config.username,
       password: config.password,
-      port: config.port,
-      ssl: config.ssl,
-      tls: config.tls,
-      auth: config.auth
+      port:     config.port,
+      ssl:      config.ssl,
+      tls:      config.tls,
+      auth:     config.auth
     ]
 
     {email.from, email.to, message}
