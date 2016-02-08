@@ -1,14 +1,15 @@
 defmodule Mailman.SmtpConfig do
   @moduledoc "A config struct for external SMTP server adapter"
 
-  defstruct relay: "",
+  defstruct [
+    relay:    "",
     username: "",
     password: "",
-    port: 1111,
-    ssl: false,
-    tls: :never,
-    auth: :always
-
+    port:     1111,
+    ssl:      false,
+    tls:      :never,
+    auth:     :always
+  ]
 end
 
 defimpl Mailman.Adapter, for: Mailman.SmtpConfig do

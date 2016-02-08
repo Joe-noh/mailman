@@ -9,8 +9,8 @@ defmodule Mailman.LocalSmtpAdapter do
   defp external_for(config) do
     %Mailman.SmtpConfig{
       relay: "localhost",
-      port: config.port,
-      auth: :never
+      port:  config.port,
+      auth:  :never
     }
   end
 end

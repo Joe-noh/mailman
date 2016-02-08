@@ -29,7 +29,7 @@ defmodule Mailman.TestServer do
   end
 
   def handle_cast({:push, message}, rest) do
-    {:noreply, [message|rest]}
+    {:noreply, [message | rest]}
   end
 
   def handle_call(:list, _, state) do

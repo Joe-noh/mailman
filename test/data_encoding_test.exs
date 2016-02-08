@@ -4,15 +4,15 @@ defmodule DataEncodingTest do
 
   def testing_string do
     """
-    Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. 
+    Litwo! Ojczyzno moja! Ty jesteś jak zdrowie.
 
-    Ile cię stracił. Dziś piękność twą w domu i czuł, 
-że teraz Napoleon, człek mądry a 
-potem najwyższych krajowych zamieszków. Dobra, całe wesoło, lecz w zastępstwie gospodarza, gdy je posłyszał, znikał nagle taż chętka, nie będziesz przy jego poznać nie miał wielką, i rozprawiali, nieco wylotów kontusza nalał 
-węgrzyna i swoją ważność zarazem poznaje. jak światłość miesiąca. Nucąc chwyciła suknie, biegła bardzo szybko, suwała się ramieniu. Przeprosiwszy go powitać. Dawno domu lasami i Obuchowicz Piotrowski, Obolewski, Rożycki, Janowicz, Mirzejewscy, Brochocki i kłopotach, i zdrowie. 
+    Ile cię stracił. Dziś piękność twą w domu i czuł,
+że teraz Napoleon, człek mądry a
+potem najwyższych krajowych zamieszków. Dobra, całe wesoło, lecz w zastępstwie gospodarza, gdy je posłyszał, znikał nagle taż chętka, nie będziesz przy jego poznać nie miał wielką, i rozprawiali, nieco wylotów kontusza nalał
+węgrzyna i swoją ważność zarazem poznaje. jak światłość miesiąca. Nucąc chwyciła suknie, biegła bardzo szybko, suwała się ramieniu. Przeprosiwszy go powitać. Dawno domu lasami i Obuchowicz Piotrowski, Obolewski, Rożycki, Janowicz, Mirzejewscy, Brochocki i kłopotach, i zdrowie.
 
-    Nazywał się nagle, stronnicy Sokół na Francuza. oj, ten Bonapart czarował, no, tak mędrsi fircykom oprzeć się Soplica. wszyscy za pierwszym na świecie jeśli nasza młodzie wyjeżdża za duszę jego upadkiem domy i w klasztorze. 
-Ciszę przerywał ale powiedzieć nie był zacietrzewiony jak refektarz, z nowych gości. W końcu, stawiła przed młodzieżą o ten Bonapart figurka! Bez Suworowa to mówiąc, że serce mu przed ganek zajechał któryś z woźnym 
+    Nazywał się nagle, stronnicy Sokół na Francuza. oj, ten Bonapart czarował, no, tak mędrsi fircykom oprzeć się Soplica. wszyscy za pierwszym na świecie jeśli nasza młodzie wyjeżdża za duszę jego upadkiem domy i w klasztorze.
+Ciszę przerywał ale powiedzieć nie był zacietrzewiony jak refektarz, z nowych gości. W końcu, stawiła przed młodzieżą o ten Bonapart figurka! Bez Suworowa to mówiąc, że serce mu przed ganek zajechał któryś z woźnym
 
 Protazym ze srebrnymi klamrami trzewiki peruka z których by to mówiąc, że serce niewinne ale nigdzie nie chciał, według nowej.
 

@@ -1,20 +1,15 @@
 defmodule Mailman.Header do
   @moduledoc "Represents a Mime-Mail header"
 
-  defstruct name: "",
-    value: ""
+  defstruct name:  "", value: ""
 
-  def from_raw(raw) when is_tuple(raw) do
+  def from_raw({key, value}) do
     %Mailman.Header{
-      name: elem(raw, 0),
-      value: process_value(elem(raw, 0), elem(raw, 1))
+      name:  key,
+      value: process_value(key, value)
     }
   end
 
-  def process_value(name, value) do
-    case name do
-      'To' -> String.split(value, ",")
-      _    -> value
-    end
-  end
+  def process_value('To', value), do: String.split(value, ",")
+  def process_value(_,    value), do: value
 end

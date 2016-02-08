@@ -1,19 +1,19 @@
 defmodule AttachmentsTest do
   use ExUnit.Case, async: true
 
-  test "#inline returns { :ok, attachment } when file exists" do
-    { :ok, attachment } = Mailman.Attachment.inline("test/data/blank.png")
+  test "#inline returns {:ok, attachment} when file exists" do
+    {:ok, attachment} = Mailman.Attachment.inline("test/data/blank.png")
     assert is_map(attachment)
   end
 
-  test "#inline returns { :error, message } when file exists" do
+  test "#inline returns {:error, message} when file exists" do
     file_path = "test/data/idontexist.png"
-    { :error, _ } = Mailman.Attachment.inline(file_path)
+    {:error, _} = Mailman.Attachment.inline(file_path)
   end
 
 
   test "Attachment with a different disposition filename" do
-    { :ok, attachment } = Mailman.Attachment.inline("test/data/blank.png", "another_name.png")
+    {:ok, attachment} = Mailman.Attachment.inline("test/data/blank.png", "another_name.png")
     assert attachment.file_name == "another_name.png"
     assert is_map(attachment)
   end
